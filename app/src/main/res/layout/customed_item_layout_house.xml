@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/img_house_main_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pic1"
+        android:scaleType="centerCrop"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="5dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#88000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/img_house_main_photo"
+        android:layout_alignRight="@+id/img_house_main_photo">
+
+        <TextView
+            android:id="@+id/txt_house_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="نام خانه"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/txt_house_visited_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17 بازدید"
+            android:textColor="#ffffff"
+            android:padding="5dp"
+            android:textSize="15sp"
+            android:layout_alignParentLeft="true"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>
